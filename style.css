@@ -107,6 +107,8 @@
    min-height: 100vh;
 }
 
+
+
 form{
     min-width:60vw ;
     border-radius: 5px;
@@ -243,7 +245,7 @@ input,select{
 
 .why{
     padding: 10px;
-    max-width: 80vw;
+    max-width: 94vw;
     margin: auto;
 }
 
