@@ -1,0 +1,322 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+
+.top-bar{
+   position: sticky;
+   top: 0px;
+   width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-family: sans-serif;
+   background: #000;
+   padding: 5px 20px;
+}
+
+
+.logo li{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 5px; 
+}
+
+.logo li img{
+    width: 30px;
+    margin-right: 2px;
+    border-radius: 50%;
+   }
+
+.logo-name{
+    color:aqua;
+    display: inline;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.top-bar-nav-list{
+    display: flex;
+    justify-content: right;
+    gap:5px ;
+    align-items: center;
+}
+
+
+.top-bar-nav-list li{
+    text-align: center;
+    color:aliceblue;
+    margin-right: 5px;
+    list-style: none;
+    font-weight:600;
+    background: rgb(117, 112, 112,.1);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.top-bar-nav-list a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.top-bar-nav-list li:hover{  
+    background: #3a3939;
+}
+
+.side-bar-nav-list{
+    display: none;
+    width: 30vw;
+    position: fixed;
+    top:0px;
+    right: 0px;
+    list-style: none;
+    background: #000;   
+}
+
+.side-bar-nav-list a{
+  color:aliceblue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.side-bar-nav-list li{
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom:2px ;
+    background: #2e2d2d; 
+  }
+
+ 
+  .menu-img{
+    width: 30px;
+    
+  }
+  .close{
+    width: 30px;
+  }
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   min-height: 100vh;
+}
+
+form{
+    min-width:60vw ;
+    border-radius: 5px;
+    border: aqua 2px solid;
+    margin: auto;
+    padding: 20px;
+    font-family: sans-serif;
+    box-shadow: 0px 2px 4px 2px #2e2d2d ;
+
+}
+
+
+
+form h3{
+    margin: auto;
+    text-align: center;
+}
+
+fieldset{
+   padding: 10px;
+   border-radius: 5px;
+   margin: 10px auto;
+   border: #000 2px solid;
+}
+
+legend{
+    width: 100px;
+    margin-left: 5px;
+    border: #000 1px solid;
+    padding: 2px 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+.title{
+    padding: 0px;
+    position: relative;
+    height:50px;
+}
+
+.title legend{
+   z-index: 1000px;
+}
+
+.title input{
+   background: transparent;
+    position: absolute;
+    width: 100%;
+    padding: 10px 10px;
+    top:-13px;
+    height: 37px;
+    outline: none;
+    border: none;
+    
+}
+
+input,select{
+  font-size: medium;
+}
+
+.upload{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    padding: 5px;
+    background:aqua;
+    border-radius: 5px;
+
+
+
+}
+
+.upload h4{
+    display: inline;
+}
+
+.upload img{
+    height: 20px;
+    display: inline;
+   
+}
+
+
+
+
+.txt-description{
+    padding: 0px;
+    position: relative;
+    height:230px;
+}
+
+.txt-description legend{
+    z-index: 1000px;
+
+}
+
+.txt-description textarea{
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    padding: 10px 10px;
+    top:-8px;
+    outline: none;
+    border: none;
+    height:200px;
+}
+
+#top{
+    position: sticky;
+    top:50px;
+    right: 2px;
+
+}
+
+
+#top a img{
+    height: 20px;
+}
+
+#bottom{
+    position: fixed;
+    bottom:30px;
+    left: 2px;
+
+}
+
+
+#bottom a img{
+    height: 20px;
+}
+
+.why{
+    padding: 10px;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.why div div{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.why div div img{
+    height: 200px;
+}
+
+.why .uploads img{
+    height: 600px;
+}
+
+.developers{ 
+    padding: 15px ;
+    text-align: center;
+    margin: 10px auto;
+    background: #f3f0f0;
+}
+
+.developers img{
+    height: 30px;
+   
+}
+
+li{
+    list-style-position: inside;
+    margin:10px auto ;
+}
+
+.Contact{
+    padding: 15px ;
+    background: #f3f0f0;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.Contact img{
+    height: 30px;
+}
+
+.Contact  li {
+    list-style: none;
+   
+    margin: 10px auto;
+}
+
+.Contact  li a {
+ text-decoration: none;
+ display: flex;
+ justify-content: center;
+ column-gap: 10px;
+ align-items: center;
+}
+@media(max-width:700px){
+    .visible-pc{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+@media(min-width:700px){
+    .visible-pc{
+        display: flex;
+
+    }
+    .menu{
+        display: none;
+    }
+}

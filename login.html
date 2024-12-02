@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Okoa Sem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="top-bar">
+      <ul class="logo">
+        <li class=>
+          <img src="../images/logo.png" alt="logo" /><span class="logo-name">Okoa Sem</span>
+        </li>
+      </ul>
+
+      <ul class="top-bar-nav-list visible-pc">
+        <a href="index.html"><li>Home</li></a>
+        <a href="Upload.html"><li>Upload</li></a>
+        <a href="Resources.html"><li>Resources</li></a>
+        <a href="Videos.html"><li>Videos</li></a>
+        <a href="Login.html"><li>Login</li></a> 
+      </ul>
+
+      <ul class="menu">
+        <li><img class="menu-img" src="../images/menu.png" onclick="showSideMenu()"></li>
+      </ul>
+     
+      <ul class="side-bar-nav-list visible-mobile">
+        <a href="#"><li><img class="close" src="../images/close.png"  onclick="closeSideMenu()"></li></a>
+        <a href="index.html"><li>Home</li></a>
+        <a href="Upload.html"><li>Upload</li></a>
+        <a href="Resources.html"><li>Resources</li></a>
+        <a href="Videos.html"><li>Videos</li></a>
+        <a href="Login.html"><li>Login</li></a> 
+      </ul>
+
+     
+    </nav>
+    <div class="main">
+      <form action="../back-end/login.php">
+        <p><h3>Login Below</h3></p>
+        <fieldset>
+          <legend>username</legend>
+        </fieldset>
+        <fieldset>
+          <legend>password</legend>
+        </fieldset>
+        <br>
+        <p class="upload">
+          <input type="submit" name="submit" class="submit">
+        </p>
+      </form>
+    </div>
+    <script>
+        let sideBar=document.querySelector(".side-bar-nav-list");
+  
+        function showSideMenu(){
+          sideBar.style.display="block";
+        }
+  
+        function closeSideMenu(){
+          sideBar.style.display="none";
+        }
+  
+      </script>
+    </body>
+  </html>
+  

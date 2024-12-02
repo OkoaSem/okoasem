@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Okoa Sem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="top-bar">
+      <ul class="logo">
+        <li class=>
+          <img src="../images/logo.png" alt="logo" /><span class="logo-name">Okoa Sem</span>
+        </li>
+      </ul>
+
+      <ul class="top-bar-nav-list visible-pc">
+        <a href="index.html"><li>Home</li></a>
+        <a href="Upload.html"><li>Upload</li></a>
+        <a href="Resources.html"><li>Resources</li></a>
+        <a href="Videos.html"><li>Videos</li></a>
+        <a href="Login.html"><li>Login</li></a> 
+      </ul>
+
+      <ul class="menu">
+        <li><img class="menu-img" src="../images/menu.png" onclick="showSideMenu()"></li>
+      </ul>
+     
+      <ul class="side-bar-nav-list visible-mobile">
+        <a href="#"><li><img class="close" src="../images/close.png"  onclick="closeSideMenu()"></li></a>
+        <a href="index.html"><li>Home</li></a>
+        <a href="Upload.html"><li>Upload</li></a>
+        <a href="Resources.html"><li>Resources</li></a>
+        <a href="Videos.html"><li>Videos</li></a>
+        <a href="Login.html"><li>Login</li></a> 
+      </ul>
+
+     
+    </nav>
+    <div class="index-main">
+      <p class="title"><center><h3>Welcome To Okoa Semester</h3></center></p>
+      <br>
+      <br>
+      <p><h4><center>#Number 1 Fast Revision Platform</center></h4></p>
+      
+      <br>
+  
+
+    <div class="why">
+      <div class="resources">
+        <h3 >
+          Get Latest <a href="resources.html">resources</a> class PDFs and assignments.
+        </h3>
+        <div>
+          <a href="resource/IT.php"><img src="../images/IT-screen.png" alt="IT"></a>
+          <a href="resource/Education.php"><img src="../images/education-screen.png" alt="education"></a>
+          <a href="resource/math.php"><img src="../images/math-screen.png" alt="math"></a>
+        </div>
+      </div>
+      <br><br>
+      <div class="videos">
+        <h3 >
+          Watch <a href="videos.html">videos tutorials</a> of your desired unit.
+        </h3>
+        <div>
+          <a href="videos.html"><img src="../images/html.png" alt="IT"></a>
+          <a href="videos.html"><img src="../images/calculus.png" alt="IT"></a>
+        
+        </div>
+      </div>
+      <br>
+      <br>
+    
+      <div class="uploads">
+        <h3 >
+         <a href="Upload.html">Upload</a> your files to share with other users.
+        </h3>
+        <div>
+          <a href="Upload.html"><img src="../images/upload-screen.png" alt="IT"></a>
+        </div>
+      </div>
+
+    <div class="developers">
+      <img src="../images/code.png" alt="">
+      <p>
+        <h3>Developers</h3>
+        <p><ol>
+          <li>Lucky Nguya Jumbale CCS/00008/023</li>
+          <li>Rogers Korir CCS/00006/023</li>
+          <li>Dennis Kariuki CCS/00024/023</li>
+          <li>Emmanuel Sande CCS/000/023</li>
+          <li>Gregson Mwavuna CCC/00022/023</li>
+        </ol></p>
+      </p>
+    </div>
+    <div class="Contact">
+      <p>
+        <h3>Contact Us</h3>
+        <p><ul>
+          <li><a href="https://wa.me/+254708612010"><img src="../images/whatsapp-icon.png" alt=""> <span>Whatsapp</span></a></li>
+          <li><a href="mailto:gregsonmwavuna3@gmail.com"><img src="../images/gmail.png" alt=""> <span> Email</span></a></li>
+          <li><a href="tel:+254708612010"><img src="../images/call-us.jpeg" alt=""> <span>Call Us</span></a></li>
+         
+        </ul></p>
+      </p>
+    </div>
+    </div>
+
+
+    <script>
+      let sideBar=document.querySelector(".side-bar-nav-list");
+
+      function showSideMenu(){
+        sideBar.style.display="block";
+      }
+
+      function closeSideMenu(){
+        sideBar.style.display="none";
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.videos-main{
+    padding: 10px;
+}
+
+.videos-main .category{
+    padding: 10px;
+  
+}
+
+.videos-main .category .category-title{
+    padding: 5px;
+}
+
+.videos-main .category .videos{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 5px;
+    scrollbar-color: transparent;
+}
+
+.videos-main .category .videos .video{
+    margin:5px;
+}
+.videos-main .category .videos .video .video-title{
+
+}
